@@ -24,9 +24,7 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? true // Allow all origins in production (same domain deployment)
-    : ['http://localhost:3000'],
+  origin:  ['https://tglinks.vercel.app'],
   credentials: true
 }));
 
